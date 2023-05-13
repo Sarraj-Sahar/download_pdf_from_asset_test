@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
                   onPressed: () {
                     AnchorElement anchorElement = new AnchorElement(
                         href: "assets/Sahar_Sarraj_Resume.pdf");
-                    anchorElement.download = "sahar_resume";
+                    anchorElement.download = "my file";
                     anchorElement.click();
                   },
                   child: Text("Download"),
