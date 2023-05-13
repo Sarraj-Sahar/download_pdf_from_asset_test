@@ -24,10 +24,14 @@ class _MyAppState extends State<MyApp> {
                 height: 90,
               ),
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(8.0),
                 child: ElevatedButton(
-                  onPressed: () =>
-                      downloadFile("assets/Sahar_Sarraj_Resume.pdf"),
+                  onPressed: () {
+                    AnchorElement anchorElement = new AnchorElement(
+                        href: "assets/Sahar_Sarraj_Resume.pdf");
+                    anchorElement.download = "sahar_resume";
+                    anchorElement.click();
+                  },
                   child: Text("Download"),
                 ),
               ),
@@ -37,10 +41,4 @@ class _MyAppState extends State<MyApp> {
       ),
     );
   }
-}
-
-downloadFile(url) {
-  AnchorElement anchorElement = new AnchorElement(href: url);
-  anchorElement.download = "sahar_resume";
-  anchorElement.click();
 }
