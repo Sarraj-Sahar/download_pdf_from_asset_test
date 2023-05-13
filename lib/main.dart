@@ -41,6 +41,6 @@ class _MyAppState extends State<MyApp> {
 
 downloadFile(url) {
   AnchorElement anchorElement = new AnchorElement(href: url);
-  anchorElement.download = "Flutter Logo";
+  anchorElement.download = "sahar_resume";
   anchorElement.click();
 }
