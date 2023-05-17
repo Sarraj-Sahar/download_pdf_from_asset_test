@@ -28,7 +28,8 @@ class _MyAppState extends State<MyApp> {
                 child: ElevatedButton(
                   onPressed: () {
                     AnchorElement anchorElement = new AnchorElement(
-                        href: "assets/Sahar_Sarraj_Resume.pdf");
+                        href:
+                            "https://download-pdf-from-asset-test.vercel.app/assets/assets/Sahar_Sarraj_Resume.pdf");
                     anchorElement.download = "my file";
                     anchorElement.click();
                   },
